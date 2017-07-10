@@ -2,8 +2,8 @@
 Peer-to-Peer network that contains a small-scale social networking feature for it to be hosted on school computers. 
 
 ## Networking
-The network uses a Peer-to-Peer model inspired by (IPFS)[ipfs.io], although with a significant difference - the network doesn't attempt to keep its state forever. The network is perfectly fine with losing all the data on it. Each student/device/*node* (these three terms will be used interchangeably) has the following parameters:
-```
+The network uses a Peer-to-Peer model inspired by [IPFS](ipfs.io), although with a significant difference - the network doesn't attempt to keep its state forever. The network is perfectly fine with losing all the data on it. Each student/device/**node** (these three terms will be used interchangeably) has the following parameters:
+```golang
 // EXCERPT FROM networking/node.go
 type Node struct {
 	id []byte // The ID is created by sha256(users IP)
